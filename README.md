@@ -1,0 +1,2 @@
+# flashcard-frontend
+flashcard typescript
