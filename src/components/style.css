@@ -1,0 +1,32 @@
+header {
+  height: 70px;
+  background-color: var(--blue) !important;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  width: 90px;
+}
+.search{
+    width: 30%;
+}
+.button{
+    background-color: var(--whitesmoke);
+    color: var(--blue);
+}
+.button:hover{
+    background-color: var(--blue);
+    color: var(--whitesmoke);
+    border-color: var(--white);
+    border-radius: 5px;
+    border-width: 1px;
+}
+
