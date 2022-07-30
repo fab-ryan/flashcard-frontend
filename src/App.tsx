@@ -1,10 +1,22 @@
-import Home from "./pages/home"
-
+import { Routes, Route } from "react-router-dom"
+import Home from "./pages/home/home"
+import Login from "./pages/login/login"
+import NotFound from "./pages/notPage";
+import SignUp from "./pages/signup/signUp";
+import { ToastContainer } from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
-    <div className="App">
-      <Home/>
-    </div>
+    <>
+      <ToastContainer />
+      <Routes>
+        <Route element={<Home />} path="/" />
+        <Route element={<Login />} path="/login" />
+        <Route element={<NotFound />} path="*" />
+        <Route element={<SignUp />} path="/signup" />
+      </Routes>
+    </>
+
   );
 }
 
